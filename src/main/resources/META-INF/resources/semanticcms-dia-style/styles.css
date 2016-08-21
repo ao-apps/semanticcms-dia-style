@@ -20,8 +20,8 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with semanticcms-dia-style.  If not, see <http://www.gnu.org/licenses/>.
  */
-span.semanticcms-dia-dia-link,
-a.semanticcms-dia-dia-link {
+span.semanticcms-dia-link,
+a.semanticcms-dia-link {
 	display: inline-block;
 	background-repeat: no-repeat;
 	background-position: left center;
@@ -30,4 +30,7 @@ a.semanticcms-dia-dia-link {
 	min-height: 24px;
 	background-size: 24px 24px;
 	background-image: url(dia.png);
+}
+li.semanticcms-dia-list-item {
+	list-style-image: url(dia-16x16.png);
 }

@@ -37,7 +37,9 @@ public class DiaStyleContextListener implements ServletContextListener {
 		// Add our CSS file
 		semanticCMS.addCssLink("/semanticcms-dia-style/styles.css");
 		// Add link CSS class
-		semanticCMS.addLinkCssClass(Dia.class, "semanticcms-dia-dia-link");
+		semanticCMS.addLinkCssClass(Dia.class, "semanticcms-dia-link");
+		// Add list item CSS class
+		semanticCMS.addListItemCssClass(Dia.class, "semanticcms-dia-list-item");
 	}
 
 	@Override
