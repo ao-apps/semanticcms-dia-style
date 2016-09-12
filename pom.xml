@@ -38,6 +38,7 @@ along with semanticcms-dia-style.  If not, see <http://www.gnu.org/licenses />.
 	<name>SemanticCMS Dia Style</name>
 	<url>https://semanticcms.com/dia/style/</url>
 	<description>Default style for Java API for embedding Dia-based diagrams in web pages.</description>
+	<inceptionYear>2013</inceptionYear>
 
 	<scm>
 		<connection>scm:git:git://github.com/aoindustries/semanticcms-dia-style.git</connection>
