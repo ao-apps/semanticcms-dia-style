@@ -1,6 +1,6 @@
 /*
  * semanticcms-dia-style - Default style for Java API for embedding Dia-based diagrams in web pages.
- * Copyright (C) 2016, 2017  AO Industries, Inc.
+ * Copyright (C) 2016, 2017, 2020  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -29,7 +29,7 @@ import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
 
 @WebListener("Registers the styles for diagrams in SemanticCMS.")
-public class DiaStyleContextListener implements ServletContextListener {
+public class Initializer implements ServletContextListener {
 
 	@Override
 	public void contextInitialized(ServletContextEvent event) {
