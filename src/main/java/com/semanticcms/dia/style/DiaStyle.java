@@ -22,20 +22,28 @@
  */
 package com.semanticcms.dia.style;
 
+import com.aoindustries.web.resources.registry.Style;
+import com.aoindustries.web.resources.servlet.RegistryEE;
 import com.semanticcms.core.servlet.SemanticCMS;
 import com.semanticcms.dia.model.Dia;
+import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
 
-@WebListener("Registers the styles for diagrams in SemanticCMS.")
-public class Initializer implements ServletContextListener {
+@WebListener("Registers the styles for diagrams in RegistryEE and SemanticCMS.")
+public class DiaStyle implements ServletContextListener {
+
+	public static final Style SEMANTICCMS_DIA = new Style("/semanticcms-dia-style/semanticcms-dia.css");
 
 	@Override
 	public void contextInitialized(ServletContextEvent event) {
-		SemanticCMS semanticCMS = SemanticCMS.getInstance(event.getServletContext());
+		ServletContext servletContext = event.getServletContext();
+
 		// Add our CSS file
-		semanticCMS.addCssLink("/semanticcms-dia-style/semanticcms-dia.css");
+		RegistryEE.get(servletContext).global.styles.add(SEMANTICCMS_DIA);
+
+		SemanticCMS semanticCMS = SemanticCMS.getInstance(servletContext);
 		// Add link CSS class
 		semanticCMS.addLinkCssClass(Dia.class, "semanticcms-dia-link");
 		// Add list item CSS class
