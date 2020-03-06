@@ -22,6 +22,7 @@
  */
 package com.semanticcms.dia.style;
 
+import com.aoindustries.web.resources.registry.Group;
 import com.aoindustries.web.resources.registry.Style;
 import com.aoindustries.web.resources.servlet.RegistryEE;
 import com.semanticcms.core.renderer.html.HtmlRenderer;
@@ -34,6 +35,9 @@ import javax.servlet.annotation.WebListener;
 @WebListener("Registers the styles for diagrams in RegistryEE and HtmlRenderer.")
 public class DiaStyle implements ServletContextListener {
 
+	public static final Group.Name RESOURCE_GROUP = new Group.Name("semanticcms-dia-style");
+
+	// TODO: Change to Group.Name once we have group-level ordering
 	public static final Style SEMANTICCMS_DIA = new Style("/semanticcms-dia-style/semanticcms-dia.css");
 
 	@Override
@@ -41,7 +45,11 @@ public class DiaStyle implements ServletContextListener {
 		ServletContext servletContext = event.getServletContext();
 
 		// Add our CSS file
-		RegistryEE.get(servletContext).global.styles.add(SEMANTICCMS_DIA);
+		RegistryEE.Application.get(servletContext)
+			.activate(RESOURCE_GROUP) // TODO: Activate as-needed
+			.getGroup(RESOURCE_GROUP)
+			.styles
+			.add(SEMANTICCMS_DIA);
 
 		HtmlRenderer htmlRenderer = HtmlRenderer.getInstance(servletContext);
 		// Add link CSS class
