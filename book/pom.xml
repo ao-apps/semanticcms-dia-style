@@ -35,8 +35,6 @@ along with semanticcms-dia-style.  If not, see <http://www.gnu.org/licenses />.
 	<properties>
 		<!-- These values are copied from the project being documented -->
 		<documented.artifactId>semanticcms-dia-style</documented.artifactId>
-		<documented.javaVersion>1.8</documented.javaVersion>
-		<documented.javac.link.javaApi>${javac.link.javaApi.jdk8}</documented.javac.link.javaApi>
 		<documented.name>SemanticCMS Dia Style²</documented.name>
 		<documented.shortTitle>Style</documented.shortTitle>
 		<documented.description>Default style for Java API for embedding Dia-based diagrams in web pages.</documented.description>
