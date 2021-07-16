@@ -9,6 +9,7 @@
 [![license: LGPL v3](https://semanticcms.com/ao-badges/license-lgpl-3.0.svg)](https://www.gnu.org/licenses/lgpl-3.0)
 
 [![Build](https://github.com/aoindustries/semanticcms-dia-style/workflows/Build/badge.svg?branch=1.x)](https://github.com/aoindustries/semanticcms-dia-style/actions?query=workflow%3ABuild)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.semanticcms/semanticcms-dia-style/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.semanticcms/semanticcms-dia-style)
 
 Default style for Java API for embedding [Dia-based diagrams](https://wiki.gnome.org/Apps/Dia/) in web pages.
 
