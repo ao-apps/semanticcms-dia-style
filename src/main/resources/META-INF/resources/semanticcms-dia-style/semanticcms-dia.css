@@ -1,6 +1,6 @@
 /*
  * semanticcms-dia-style - Default style for Java API for embedding Dia-based diagrams in web pages.
- * Copyright (C) 2013, 2014, 2015, 2016  AO Industries, Inc.
+ * Copyright (C) 2013, 2014, 2015, 2016, 2022  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -22,15 +22,15 @@
  */
 span.semanticcms-dia-link,
 a.semanticcms-dia-link {
-	display: inline-block;
-	background-repeat: no-repeat;
-	background-position: left center;
-	white-space: nowrap;
-	padding-left: 26px;
-	min-height: 24px;
-	background-size: 24px 24px;
-	background-image: url(dia.png);
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: left center;
+  white-space: nowrap;
+  padding-left: 26px;
+  min-height: 24px;
+  background-size: 24px 24px;
+  background-image: url(dia.png);
 }
 li.semanticcms-dia-list-item {
-	list-style-image: url(dia-16x16.png);
+  list-style-image: url(dia-16x16.png);
 }

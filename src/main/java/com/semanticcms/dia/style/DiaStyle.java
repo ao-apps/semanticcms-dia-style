@@ -36,31 +36,31 @@ import javax.servlet.annotation.WebListener;
 @WebListener("Registers the styles for diagrams in RegistryEE and HtmlRenderer.")
 public class DiaStyle implements ServletContextListener {
 
-	public static final Group.Name RESOURCE_GROUP = new Group.Name("semanticcms-dia-style");
+  public static final Group.Name RESOURCE_GROUP = new Group.Name("semanticcms-dia-style");
 
-	// TODO: Change to Group.Name once we have group-level ordering
-	public static final Style SEMANTICCMS_DIA = new Style("/semanticcms-dia-style/semanticcms-dia.css");
+  // TODO: Change to Group.Name once we have group-level ordering
+  public static final Style SEMANTICCMS_DIA = new Style("/semanticcms-dia-style/semanticcms-dia.css");
 
-	@Override
-	public void contextInitialized(ServletContextEvent event) {
-		ServletContext servletContext = event.getServletContext();
+  @Override
+  public void contextInitialized(ServletContextEvent event) {
+    ServletContext servletContext = event.getServletContext();
 
-		// Add our CSS file
-		RegistryEE.Application.get(servletContext)
-			.activate(RESOURCE_GROUP) // TODO: Activate as-needed
-			.getGroup(RESOURCE_GROUP)
-			.styles
-			.add(SEMANTICCMS_DIA);
+    // Add our CSS file
+    RegistryEE.Application.get(servletContext)
+      .activate(RESOURCE_GROUP) // TODO: Activate as-needed
+      .getGroup(RESOURCE_GROUP)
+      .styles
+      .add(SEMANTICCMS_DIA);
 
-		HtmlRenderer htmlRenderer = HtmlRenderer.getInstance(servletContext);
-		// Add link CSS class
-		htmlRenderer.addLinkCssClass(Dia.class, "semanticcms-dia-link");
-		// Add list item CSS class
-		htmlRenderer.addListItemCssClass(Dia.class, "semanticcms-dia-list-item");
-	}
+    HtmlRenderer htmlRenderer = HtmlRenderer.getInstance(servletContext);
+    // Add link CSS class
+    htmlRenderer.addLinkCssClass(Dia.class, "semanticcms-dia-link");
+    // Add list item CSS class
+    htmlRenderer.addListItemCssClass(Dia.class, "semanticcms-dia-list-item");
+  }
 
-	@Override
-	public void contextDestroyed(ServletContextEvent event) {
-		// Do nothing
-	}
+  @Override
+  public void contextDestroyed(ServletContextEvent event) {
+    // Do nothing
+  }
 }
