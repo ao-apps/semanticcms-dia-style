@@ -47,10 +47,10 @@ public class DiaStyle implements ServletContextListener {
 
     // Add our CSS file
     RegistryEE.Application.get(servletContext)
-      .activate(RESOURCE_GROUP) // TODO: Activate as-needed
-      .getGroup(RESOURCE_GROUP)
-      .styles
-      .add(SEMANTICCMS_DIA);
+        .activate(RESOURCE_GROUP) // TODO: Activate as-needed
+        .getGroup(RESOURCE_GROUP)
+        .styles
+        .add(SEMANTICCMS_DIA);
 
     SemanticCMS semanticCMS = SemanticCMS.getInstance(servletContext);
     // Add link CSS class
