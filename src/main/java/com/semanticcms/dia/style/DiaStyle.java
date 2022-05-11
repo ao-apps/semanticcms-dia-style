@@ -33,6 +33,9 @@ import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
 
+/**
+ * Registers the styles for diagrams in {@link RegistryEE} and {@link HtmlRenderer}.
+ */
 @WebListener("Registers the styles for diagrams in RegistryEE and HtmlRenderer.")
 public class DiaStyle implements ServletContextListener {
 
@@ -49,8 +52,8 @@ public class DiaStyle implements ServletContextListener {
     RegistryEE.Application.get(servletContext)
         .activate(RESOURCE_GROUP)// TODO: Activate as-needed
         .getGroup(RESOURCE_GROUP)
-        .styles
-        .add(SEMANTICCMS_DIA);
+            .styles
+            .add(SEMANTICCMS_DIA);
 
     HtmlRenderer htmlRenderer = HtmlRenderer.getInstance(servletContext);
     // Add link CSS class
