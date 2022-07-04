@@ -10,12 +10,16 @@
 
 # Significant manual code formatting clean-up…
 8eddba59ca78eee5000a220a09a814f553f5d3cb
+f5fa085efe82d92c9d995b6c2aee5b29b9ed66d0
 
 # Performed automatic source code clean-up with rewrite-maven-plugin
 ccdfe21fa7c2b2ce6b48c6119d5ec6f26fa2c136
+5ce8df02088d2622672ee01efa716dd682055c0b
 
 # Performed automatic clean-up with org.openrewrite.java.cleanup.Cleanup
 3d6ad944fa19d78c934fc49d199e1b057a663bbe
+215c0faa0d01dc56ef64194b397fc7e6efd7b42e
 
 # Performed manual checkstyle clean-up
 325e617f50c68f58cc5e4966dccb185afebad40c
+1ab4e05a89d245d57cc1268641b0d4b888fa818b
