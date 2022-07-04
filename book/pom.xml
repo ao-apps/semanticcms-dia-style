@@ -36,15 +36,15 @@ along with semanticcms-dia-style.  If not, see <https://www.gnu.org/licenses/>.
     <module.name>com.semanticcms.dia.style.book</module.name>
     <!-- These values are copied from the project being documented -->
     <documented.artifactId>semanticcms-dia-style</documented.artifactId>
-    <documented.name>SemanticCMS Dia Style²</documented.name>
+    <documented.name>SemanticCMS Dia Style</documented.name>
     <documented.description>Default style for Java API for embedding Dia-based diagrams in web pages.</documented.description>
 
     <description.html><![CDATA[Documentation for <a target="${javadoc.target}" href="${project.url}">${documented.name}</a> in <a target="${javadoc.target}" href="https://semanticcms.com/">SemanticCMS</a> format.]]></description.html>
   </properties>
 
-  <name>SemanticCMS Dia Style² Book</name>
+  <name>SemanticCMS Dia Style Book</name>
   <url>https://semanticcms.com/dia/style/</url>
-  <description>Documentation for SemanticCMS Dia Style² in SemanticCMS format.</description>
+  <description>Documentation for SemanticCMS Dia Style in SemanticCMS format.</description>
   <inceptionYear>2013</inceptionYear>
 
   <licenses>
