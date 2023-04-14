@@ -23,7 +23,7 @@ Default style for Java API for embedding [Dia-based diagrams](https://wiki.gnome
 * [Project Home](https://semanticcms.com/dia/style/)
 * [Changelog](https://semanticcms.com/dia/style/changelog)
 * [API Docs](https://semanticcms.com/dia/style/apidocs/)
-* [Maven Central Repository](https://central.sonatype.com/search?namespace=com.semanticcms&q=a%3Asemanticcms-dia-style)
+* [Maven Central Repository](https://central.sonatype.com/artifact/com.semanticcms/semanticcms-dia-style)
 * [GitHub](https://github.com/ao-apps/semanticcms-dia-style)
 
 ## Contact Us
