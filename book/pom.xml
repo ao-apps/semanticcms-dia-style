@@ -41,6 +41,9 @@ along with semanticcms-dia-style.  If not, see <https://www.gnu.org/licenses/>.
     <documented.artifactId>semanticcms-dia-style</documented.artifactId>
     <documented.name>SemanticCMS Dia Style</documented.name>
     <documented.description>Default style for Java API for embedding Dia-based diagrams in web pages.</documented.description>
+    <javadoc.breadcrumbs><![CDATA[<a target="${javadoc.target}" href="https://semanticcms.com/">SemanticCMS</a>
+/ <a target="${javadoc.target}" href="https://semanticcms.com/dia/">Dia</a>
+/ <a target="${javadoc.target}" href="${project.url}">Style</a>]]></javadoc.breadcrumbs>
 
     <description.html><![CDATA[Documentation for <a target="${javadoc.target}" href="${project.url}">${documented.name}</a> in <a target="${javadoc.target}" href="https://semanticcms.com/">SemanticCMS</a> format.]]></description.html>
   </properties>
