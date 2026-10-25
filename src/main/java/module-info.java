@@ -21,11 +21,12 @@
  * along with semanticcms-dia-style.  If not, see <https://www.gnu.org/licenses/>.
  */
 module com.semanticcms.dia.style {
-  exports com.semanticcms.dia.style;
   // Direct
   requires com.aoapps.web.resources.registry; // <groupId>com.aoapps</groupId><artifactId>ao-web-resources-registry</artifactId>
   requires com.aoapps.web.resources.servlet; // <groupId>com.aoapps</groupId><artifactId>ao-web-resources-servlet</artifactId>
   requires jakarta.servlet; // <groupId>jakarta.servlet</groupId><artifactId>jakarta.servlet-api</artifactId>
   requires com.semanticcms.core.servlet; // <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-servlet</artifactId>
   requires com.semanticcms.dia.model; // <groupId>com.semanticcms</groupId><artifactId>semanticcms-dia-model</artifactId>
+
+  exports com.semanticcms.dia.style;
 }
